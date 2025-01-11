@@ -65,45 +65,70 @@ h2 {
    gap: 20px;
    margin-bottom: 30px;
 }
+.download-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
 .download-links a{
-   display: inline-flex;
-   align-items: center;
-   justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: #333;
-   padding: 12px 25px;
-   border-radius: 10px;
-   text-decoration: none;
-   font-weight: bold;
-   transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
 }
 
 /* Style for the Apple Download Link */
 .download-links a:nth-child(1) {
-   background-color: white;
-   border: 1px solid gray;
+    background-color: white;
+    border: 1px solid gray;
 }
 .download-links a:nth-child(1):hover {
-   background-color: #63F3A5; /* Match other hover */
-   color: #282828; /* Icon color on hover */
+    background-color: #63F3A5; /* Match other hover */
+    color: #282828; /* Icon color on hover */
 }
 .download-links a:nth-child(1):hover i {
-   color: inherit; /* Inherit the color from the link */
+    color: inherit; /* Inherit the color from the link */
 }
 
 /* Style for the Android Download Link */
-.download-links a:nth-child(2) {
-   background-color: #63F3A5;
+div.android-link-container{  
+     position: relative;
 }
-.download-links a:nth-child(2):hover {
-   background-color: white;
-   color: #63F3A5;
+.download-links a.disabled-link {
+    background-color: #ddd; /* Gray background */
+    color: #888; /* Gray text */
+    cursor: not-allowed;  /* Show not-allowed cursor */
+    pointer-events: none;  /* Disable click events */
 }
-.download-links a:nth-child(2):hover i {
-   color: inherit; /* Inherit the color from the link */
+
+
+.download-links a.disabled-link:hover {
+    background-color: #ddd;
+    color: #888;
+    cursor: not-allowed;
+}
+.coming-soon {
+    position: absolute;
+     font-size: 0.7em;
+      top: 5px;
+    left: 5px;
+  
+    background-color: #F363B1; /* Example color */
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+      /* Adjust as needed */
 }
 
 .download-links a i{
-   font-size: 2.2em;
+    font-size: 2.2em;
+}
 }
          color: #333; /* Default icon color */
 }
